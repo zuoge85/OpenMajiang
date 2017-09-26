@@ -5,7 +5,7 @@
     <entry key="net.adminListenServerPort">11002</entry>
     <entry key="gatewayUserMaxConnect">8000</entry>
     <!--#jdbc.url=jdbc:mysql://192.168.8.200:3306/tr_test?autoReconnect=true&amp;characterEncoding=utf-8-->
-    <entry key="jdbc.url">jdbc:mysql://127.0.0.1:3306/boss?autoReconnect=true&amp;characterEncoding=utf-8&amp;useSSL=false</entry>
+    <entry key="jdbc.url">jdbc:mysql://mysql:3306/boss?autoReconnect=true&amp;characterEncoding=utf-8&amp;useSSL=false</entry>
     <entry key="jdbc.username">root</entry>
     <entry key="jdbc.password">111111</entry>
     <entry key="jdbc.maxNums">20</entry>

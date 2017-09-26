@@ -7,65 +7,10 @@
         <format>dir</format>
     </formats>
     <includeBaseDirectory>false</includeBaseDirectory>
-
-
     <componentDescriptors>
-        <componentDescriptor>src/assembly/component.xml</componentDescriptor>
+        <componentDescriptor>src/assembly/boss.xml</componentDescriptor>
+        <componentDescriptor>src/assembly/gateway.xml</componentDescriptor>
+        <componentDescriptor>src/assembly/scene.xml</componentDescriptor>
+        <componentDescriptor>src/assembly/client.xml</componentDescriptor>
     </componentDescriptors>
-
-
-    <fileSets>
-        <fileSet>
-            <directory>${config.path}</directory>
-            <includes>
-                <include>SceneConfig.xml</include>
-            </includes>
-            <outputDirectory>scene/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>${config.path}</directory>
-            <includes>
-                <include>BossConfig.xml</include>
-            </includes>
-            <outputDirectory>boss/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>${config.path}</directory>
-            <includes>
-                <include>GatewayConfig.xml</include>
-            </includes>
-            <outputDirectory>gateway/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>${config.path}/client</directory>
-            <includes>
-                <include>application.yml</include>
-            </includes>
-            <outputDirectory>client/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>${config.path}/manager</directory>
-            <includes>
-                <include>application.yml</include>
-            </includes>
-            <outputDirectory>manager/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>${static.path}</directory>
-            <includes>
-                <include>**</include>
-            </includes>
-            <excludes>
-                <exclude>index.html</exclude>
-            </excludes>
-            <outputDirectory>client/static/</outputDirectory>
-        </fileSet>
-        <fileSet>
-            <directory>src/</directory>
-            <includes>
-                <include>startup.sh</include>
-            </includes>
-            <outputDirectory>/</outputDirectory>
-        </fileSet>
-    </fileSets>
 </assembly>

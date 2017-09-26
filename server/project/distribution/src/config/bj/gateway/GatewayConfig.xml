@@ -3,7 +3,7 @@
     <entry key="gatewayId">100</entry>
     <entry key="port">8010</entry>
     <entry key="maxConnect">8000</entry>
-    <entry key="net.bossAddress">127.0.0.1</entry>
+    <entry key="net.bossAddress">boss</entry>
     <entry key="net.bossPort">11000</entry>
     <entry key="checkKey">WMGS97f2P5tLbra7DM3L5k4UN752vJqH</entry>
     <entry key="checkConnect">false</entry>

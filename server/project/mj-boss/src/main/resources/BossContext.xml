@@ -8,9 +8,6 @@
        http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="byType" default-lazy-init="false">
 
-    <context:annotation-config/>
-    <context:component-scan base-package="game.boss.handler"/>
-    <context:component-scan base-package="game.boss.services"/>
 
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -44,7 +41,16 @@
         <property name="maxOpenPreparedStatements" value="200"/>
         <property name="connectionInitSqls" value="SET NAMES utf8mb4;"/>
     </bean>
+    <bean id="flywayWrapper" class="game.boss.FlywayWrapper">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="locations" value="db/migration"/>
+        <property name="migrate" value="true"/>
+    </bean>
 
+
+    <context:annotation-config/>
+    <context:component-scan base-package="game.boss.handler"/>
+    <context:component-scan base-package="game.boss.services"/>
     <import resource="classpath*:game/boss/dao/DaoContext.xml"/>
 
     <bean id="asyncDbService" class="game.boss.services.AsyncDbService">

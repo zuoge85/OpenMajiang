@@ -1,0 +1,15 @@
+# 请参考 https=//help.aliyun.com/document_detail/52241.html#release-file 了解更多关于release文件的编写方式
+
+# 构建源码语言类型
+code.language=java
+
+# 构建打包使用jdk版本
+baseline.jdk=jdk-1.8
+
+# 构建打包所用的maven版本
+build.tools.maven=maven3.2.5
+
+# Docker镜像构建之后push的仓库地址
+docker.repo=registry.cn-beijing.aliyuncs.com/majiang/all
+
+build.command=sh build.sh

@@ -25,7 +25,7 @@ if (!VERSION) {
 let IS_DEBUG = !gulp.env.release;
 let profile = gulp.env.profile;
 if (!profile) {
-    profile = "bj";
+    profile = "gd";
 }
 
 let IS_OPTIMIZE_IMG = !!gulp.env.optmize;
@@ -388,5 +388,6 @@ gulp.task('webclient', ['htmlImage', 'laya', 'images', 'json', 'favicon', 'docke
     console.log("webclient start");
     return gulp.src(['dist/web/**/*'])
         .pipe(plumber())
-        .pipe(gulp.dest("../../server/project/distribution/src/static/" + profile));
+        .pipe(gulp.dest("../../server/project/distribution/src/static/" + profile))
+        .pipe(gulp.dest("../../server/project/mj-client/src/main/resources/static/" ));
 });

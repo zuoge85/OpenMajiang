@@ -110,7 +110,7 @@
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-all</artifactId>
-            <version>4.2</version>
+            <version>4.0</version>
         </dependency>
         <dependency>
             <groupId>org.javassist</groupId>
@@ -195,6 +195,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
     </dependencies>
     <build>
         <!-- <resources> <resource> <directory>src/main/resources</directory> <filtering>true</filtering>
@@ -306,7 +312,7 @@
         </repository>
         <repository>
             <id>maven-repository</id>
-            <url>https://raw.githubusercontent.com/zuoge85/maven-repo/master/repository/</url>
+            <url>http://zuoge85.github.io/maven-repo/repository/</url>
         </repository>
     </repositories>
     <pluginRepositories>

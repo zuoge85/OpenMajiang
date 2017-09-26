@@ -1,0 +1,39 @@
+boss:
+  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/boss:latest'
+  restart: always
+  hostname: boss
+  mem_limit: 1G
+  memswap_limit: 1G
+scene:
+  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/scene:latest'
+  restart: always
+  hostname: scene
+  mem_limit: 1G
+  memswap_limit: 1G
+gateway:
+  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/gateway:latest'
+  restart: always
+  hostname: gateway
+  mem_limit: 1G
+  memswap_limit: 1G
+  ports:
+    - '8010:8010/tcp'
+client:
+  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/client:latest'
+  restart: always
+  hostname: client
+  mem_limit: 1G
+  memswap_limit: 1G
+  ports:
+    - '80:8080/tcp'
+mysql:
+  hostname: mysql
+  image: mysql:5.7
+  environment:
+    MYSQL_ROOT_PASSWORD: 111111
+    MYSQL_DATABASE: boss
+  restart: always
+  labels:
+    aliyun.logs: /var/log/mysql
+  volumes:
+    - /data/mysql:/var/lib/mysql

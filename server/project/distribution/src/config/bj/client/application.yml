@@ -1,6 +1,6 @@
 site:
     title: 北京麻将
-    serverUrl: ws://182.92.100.147:8011/g
+    serverUrl: ws://47.94.39.12:8010/g
 application:
     message: Hello, Andy
 
@@ -21,9 +21,9 @@ debug:
 
 
 jdbc:
-    url: jdbc:mysql://127.0.0.1:3306/boss?autoReconnect=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://mysql:3306/boss?autoReconnect=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 1111111
+    password: 111111
     driver-class-name: com.mysql.jdbc.Driver
     maxNums: 20
     minNums: 5
@@ -43,7 +43,7 @@ weixin:
 #    siteUrl: http://gd.paipaimj.com
     siteUrl: http://www.bjmajiang.com
 boss:
-    address: 127.0.0.1
+    address: boss
     port: 11002
 #    管理接口公钥
     publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOLX6y_Ud7svHi4PDOUgQMhn9DrWjTU7che_8KOK0XoItY8NlAhVXdus82Xvs268O-GgmeVmOGwXfxrFgft5CCQx-okQM2_qbuKWH1IA3JRYbKz2Kt93wtHZHqSFmwtIcv3kxupbw9umqP8dBjsPUue9vHcbem3uys6e56FHvjowIDAQAB

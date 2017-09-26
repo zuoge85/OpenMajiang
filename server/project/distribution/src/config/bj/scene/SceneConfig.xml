@@ -5,11 +5,12 @@
     <entry key="port">12000</entry>
 
     <!--用于通知网关连接场景服务器用-->
-    <entry key="address">127.0.0.1</entry>
+    <entry key="address">scene</entry>
     <entry key="asyncNums">8</entry>
     <entry key="gatewayUserMaxConnect">8000</entry>
     <!--#jdbc.url=jdbc:mysql://192.168.8.200:3306/tr_test?autoReconnect=true&amp;characterEncoding=utf-8-->
-    <entry key="jdbc.url">jdbc:mysql://127.0.0.1:3306/boss?autoReconnect=true&amp;characterEncoding=utf-8&amp;useSSL=false</entry>
+    <entry key="jdbc.url">jdbc:mysql://mysql:3306/boss?autoReconnect=true&amp;characterEncoding=utf-8&amp;useSSL=false
+    </entry>
     <entry key="jdbc.username">root</entry>
     <entry key="jdbc.password">111111</entry>
     <entry key="jdbc.maxNums">20</entry>
@@ -24,6 +25,6 @@
     <entry key="service.asyncThreadNums">4</entry>
     <entry key="service.sceneThreadNums">4</entry>
 
-    <entry key="net.bossAddress">127.0.0.1</entry>
+    <entry key="net.bossAddress">boss</entry>
     <entry key="net.bossPort">11001</entry>
 </properties>
