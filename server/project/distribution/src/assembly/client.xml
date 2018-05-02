@@ -39,5 +39,15 @@
             </includes>
             <outputDirectory>client/</outputDirectory>
         </fileSet>
+        <fileSet>
+            <directory>${static.path}</directory>
+            <includes>
+                <include>**</include>
+            </includes>
+            <excludes>
+                <exclude>index.html</exclude>
+            </excludes>
+            <outputDirectory>client/classes/static/</outputDirectory>
+        </fileSet>
     </fileSets>
 </component>

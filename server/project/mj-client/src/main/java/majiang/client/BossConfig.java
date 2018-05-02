@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * @author zuoge85@gmail.com on 2016/12/7.
  */
 @Component
-@ConfigurationProperties(prefix = "boss")
+@ConfigurationProperties(prefix = "net.boss")
 public class BossConfig {
     private String publicKey;
 

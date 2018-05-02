@@ -4,6 +4,10 @@
 
 现在我决定继续更新这个项目！并在我的blog 和公众号发布系列文章！
 
+测试服务器已经可以用，请不要用微信打开！
+
+地址<www.paipaimj.com>
+
 我的blog地址: <https://www.forkjoin.org>
 
 关注我的微信公众号:
@@ -42,9 +46,6 @@ https://github.com/forkjoinorg/base/tree/2.0.1
 
 可以微信打开了，但是不能微信登录。谢谢，
 
-
-服务器按需付费，帮我节约点流量。。什么时候关闭服务器，不保证！！
-<http://gd.paipaimj.com>
 
 
 

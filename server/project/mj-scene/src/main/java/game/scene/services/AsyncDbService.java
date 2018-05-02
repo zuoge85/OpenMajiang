@@ -15,14 +15,14 @@ public final class AsyncDbService extends AbstractAsyncService {
     }
 
 
-    public void excuete(User user, Runnable task) {
+    public void execute(User user, Runnable task) {
         submit(user.getUserId(), task);
     }
-    public void excueteRoom(int roomId, Runnable task) {
+    public void executeRoom(int roomId, Runnable task) {
         submit(roomId, task);
     }
 
-    public void excuete(Runnable task) {
+    public void execute(Runnable task) {
         submit(task);
     }
 }

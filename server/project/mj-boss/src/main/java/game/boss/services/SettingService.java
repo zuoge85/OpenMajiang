@@ -43,6 +43,7 @@ public final class SettingService {
             setting = new SettingDO();
             setting.setId(DEFAULT_ID);
         }
+        setting.setInitGold(100);
         this.setting = setting;
     }
 

@@ -32,9 +32,9 @@ import java.util.List;
 @Configuration
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
-    @Value("${boss.address}")
+    @Value("${net.boss.address}")
     private String bossAddress;
-    @Value("${boss.port}")
+    @Value("${net.boss.port}")
     private int bossPort;
 
     @Bean

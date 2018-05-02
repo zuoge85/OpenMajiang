@@ -1,6 +1,10 @@
+server:
+    compression:
+      enabled: true
+      mime-types: application/json,application/xml,text/html,text/xml,text/plain
 site:
     title: 北京麻将
-    serverUrl: ws://47.94.39.12:8010/g
+    serverUrl: ws://www.openmajiang.com:8010/g
 application:
     message: Hello, Andy
 
@@ -41,9 +45,10 @@ weixin:
     getuserUrl: https://api.weixin.qq.com/sns/userinfo
 
 #    siteUrl: http://gd.paipaimj.com
-    siteUrl: http://www.bjmajiang.com
-boss:
-    address: boss
-    port: 11002
-#    管理接口公钥
-    publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOLX6y_Ud7svHi4PDOUgQMhn9DrWjTU7che_8KOK0XoItY8NlAhVXdus82Xvs268O-GgmeVmOGwXfxrFgft5CCQx-okQM2_qbuKWH1IA3JRYbKz2Kt93wtHZHqSFmwtIcv3kxupbw9umqP8dBjsPUue9vHcbem3uys6e56FHvjowIDAQAB
+    siteUrl: http://www.openmajiang.com
+net:
+    boss:
+        address: boss
+        port: 11002
+    #    管理接口公钥
+        publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOLX6y_Ud7svHi4PDOUgQMhn9DrWjTU7che_8KOK0XoItY8NlAhVXdus82Xvs268O-GgmeVmOGwXfxrFgft5CCQx-okQM2_qbuKWH1IA3JRYbKz2Kt93wtHZHqSFmwtIcv3kxupbw9umqP8dBjsPUue9vHcbem3uys6e56FHvjowIDAQAB

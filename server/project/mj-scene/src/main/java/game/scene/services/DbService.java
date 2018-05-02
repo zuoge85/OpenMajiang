@@ -69,7 +69,7 @@ public class DbService {
             }
         }
         result.setUserPaiInfos(endResult.getUserPaiInfos());
-        asyncDbService.excueteRoom(roomId, () -> {
+        asyncDbService.executeRoom(roomId, () -> {
             roomResultDao.insert(result);
         });
     }

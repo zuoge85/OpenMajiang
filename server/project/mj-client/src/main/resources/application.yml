@@ -43,7 +43,8 @@ weixin:
 
     siteUrl: http://gd.paipaimj.com
 #    siteUrl: http://www.bjmajiang.com
-boss:
-    address: 127.0.0.1
-    port: 11002
-    publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOLX6y_Ud7svHi4PDOUgQMhn9DrWjTU7che_8KOK0XoItY8NlAhVXdus82Xvs268O-GgmeVmOGwXfxrFgft5CCQx-okQM2_qbuKWH1IA3JRYbKz2Kt93wtHZHqSFmwtIcv3kxupbw9umqP8dBjsPUue9vHcbem3uys6e56FHvjowIDAQAB
+net:
+  boss:
+      address: 127.0.0.1
+      port: 11002
+      publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCOLX6y_Ud7svHi4PDOUgQMhn9DrWjTU7che_8KOK0XoItY8NlAhVXdus82Xvs268O-GgmeVmOGwXfxrFgft5CCQx-okQM2_qbuKWH1IA3JRYbKz2Kt93wtHZHqSFmwtIcv3kxupbw9umqP8dBjsPUue9vHcbem3uys6e56FHvjowIDAQAB

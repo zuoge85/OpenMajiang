@@ -1,34 +1,53 @@
 boss:
-  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/boss:latest'
+  image: 'registry-vpc.cn-beijing.aliyuncs.com/majiang/boss:latest'
   restart: always
   hostname: boss
   mem_limit: 1G
   memswap_limit: 1G
+  expose:
+      - '11000/tcp'
+      - '11001/tcp'
+      - '11002/tcp'
+  links:
+   - mysql
 scene:
-  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/scene:latest'
+  image: 'registry-vpc.cn-beijing.aliyuncs.com/majiang/scene:latest'
   restart: always
   hostname: scene
   mem_limit: 1G
   memswap_limit: 1G
+  expose:
+     - '12000/tcp'
+  links:
+     - mysql
+     - boss
 gateway:
-  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/gateway:latest'
+  image: 'registry-vpc.cn-beijing.aliyuncs.com/majiang/gateway:latest'
   restart: always
   hostname: gateway
   mem_limit: 1G
   memswap_limit: 1G
   ports:
     - '8010:8010/tcp'
+  links:
+    - scene
+    - boss
 client:
-  image: 'registry-internal.cn-beijing.aliyuncs.com/majiang/client:latest'
+  image: 'registry-vpc.cn-beijing.aliyuncs.com/majiang/client:latest'
   restart: always
   hostname: client
   mem_limit: 1G
   memswap_limit: 1G
   ports:
-    - '80:8080/tcp'
+    - '8081:8080/tcp'
+  links:
+       - mysql
+       - boss
 mysql:
   hostname: mysql
   image: mysql:5.7
+  ports:
+    - '3306:3306/tcp'
   environment:
     MYSQL_ROOT_PASSWORD: 111111
     MYSQL_DATABASE: boss
