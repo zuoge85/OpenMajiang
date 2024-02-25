@@ -1,24 +1,21 @@
+不要使用,没时间维护!!
+
+
 # OpenMajiang(麻将)
 
 > 一个完整的麻将软件（h5 + app）
 
 现在我决定继续更新这个项目！并在我的blog 和公众号发布系列文章！
 
-测试服务器已经可以用，请不要用微信打开！
-
-地址<www.paipaimj.com>
-
-我的blog地址: <https://www.forkjoin.org>
 
 关注我的微信公众号:
 
-![小草的泡码笔记](https://www.forkjoin.org/images/wxqrcode.jpg )
 
 开发QQ群 173103450
 
 ## 麻将开发系列blog
 
-第一篇 服务器入门 <https://www.forkjoin.org/2017/09-06-majiang-0/>
+第一篇 服务器入门 
 
 ## 说明
 
